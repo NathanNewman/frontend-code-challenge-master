@@ -1,0 +1,50 @@
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+}
+
+.name {
+  flex: 1;
+}
+
+.state {
+  display: flex;
+  gap: 8px;
+}
+
+.pending {
+  color: yellow;
+}
+
+.active {
+  color: rgb(5, 214, 5);
+}
+
+.buttons {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-button {
+  margin-right: auto;
+}
+
+.right-button {
+  margin-left: auto;
+}

@@ -1,22 +1,26 @@
 import React from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from "./Home";
+import Admin from "./Admin";
+import Register from "./Register";
+import YodlerNavbar from './YodlerNavbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <YodlerNavbar />
+      <main>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/admin">
+          <Admin />
+        </Route>
+        <Route exact path="/register">
+          <Register />
+        </Route>
+      </main>
+    </BrowserRouter>
   );
 }
 
